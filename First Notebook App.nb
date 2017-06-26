@@ -1,0 +1,88 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2696,         78]
+NotebookOptionsPosition[      2220,         58]
+NotebookOutlinePosition[      2605,         75]
+CellTagsIndexPosition[      2562,         72]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Measurement and Visualization of Energy production  \
+\[OpenCurlyDoubleQuote]Solar Heaters\[CloseCurlyDoubleQuote]\
+\>", "Title",
+ CellChangeTimes->{{3.707498502142984*^9, 
+  3.707498532284708*^9}},ExpressionUUID->"ab3c50ff-b6fc-4d5e-aad1-\
+34ffa29f925d"],
+
+Cell["\<\
+The solar heaters work by transforming the energy of the sun to produce heat \
+and warm the water. This system heats the water by natural convection (they \
+don\[CloseCurlyQuote]t need a pump). So, for solar heaters  the orientation \
+of the sun track is really important.
+In this project we are using an Arduino Microcontroller and some Sensors to \
+calculate the energy produced by solar heaters.
+
+We have two kind of sensors; temperature and flow sensors. The temperature \
+sensors are digital (Model DS18B20), they have an operation range from 0\.baC \
+to 100\.baC (32\.baF-212\.baF). The flow sensor is based on the Hall Effect, \
+so it measures the rotational frequency of the turbine; we calibrate this \
+sensor with a Coriolis Effect flow meter to obtain a linear equation which is \
+function of the frequency. 
+
+The data is sent to the Data Drop every 15 minutes, so we can visualize \
+energy produced, hot water consumed and the temperature of the water tank.
+
+The goal is create a Web page that shows this data and send an automated \
+report to the user every month.\
+\>", "Text",
+ CellChangeTimes->{{3.7074990004257383`*^9, 3.707499110396893*^9}, {
+   3.707499145016676*^9, 3.7074993263446617`*^9}, {3.707499792424307*^9, 
+   3.707499831182742*^9}, 
+   3.7074999428394547`*^9},ExpressionUUID->"d1e2c619-95d9-4e96-8141-\
+1840cde3a21e"]
+}, Open  ]]
+},
+WindowSize->{808, 774},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 265, 6, 386, "Title", "ExpressionUUID" -> \
+"ab3c50ff-b6fc-4d5e-aad1-34ffa29f925d"],
+Cell[848, 30, 1356, 25, 608, "Text", "ExpressionUUID" -> \
+"d1e2c619-95d9-4e96-8141-1840cde3a21e"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
