@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2880887,      47750]
-NotebookOptionsPosition[   2562921,      42299]
-NotebookOutlinePosition[   2875806,      47635]
-CellTagsIndexPosition[   2875494,      47623]
+NotebookDataLength[   2883610,      47808]
+NotebookOptionsPosition[   2565261,      42347]
+NotebookOutlinePosition[   2878146,      47683]
+CellTagsIndexPosition[   2877834,      47671]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -16325,7 +16325,7 @@ involve the IoT for the automation and monitoring of workspaces and housing."
    3.7081216257052717`*^9, 3.70812162672083*^9}, 
    3.708252463113092*^9},ExpressionUUID->"fc37c58e-b01c-44f1-8892-\
 c017509d95ad"]
-}, Closed]]
+}, Open  ]]
 }, Open  ]],
 
 Cell[TextData[{
@@ -40685,43 +40685,44 @@ Cell["Conclusions in Detail", "TemplateSubsection",
 Cell[CellGroupData[{
 
 Cell["\<\
-During the realization of the project we find some bugs in certain functions \
-of mathematica.
-Functions such as ScheduleTask combined with DateObject and CloudDeploy did \
-not work properly. What made it impossible to refresh the website and have \
-data in real time. This same problem also affected the generator of automatic \
-reports.\
+At the end, we develop a web page to visualize the energy produced and the \
+hot water consumed by a solar heater using wolfram technologies. \
 \>", "Item",
  CellChangeTimes->{{3.708096312466115*^9, 3.7080963343962107`*^9}, {
-  3.7081984260618267`*^9, 
-  3.7081984499984093`*^9}},ExpressionUUID->"9143aecb-9659-42cf-89ff-\
-0621d114f292"],
+   3.7081984260618267`*^9, 3.7081984499984093`*^9}, {3.708254314444766*^9, 
+   3.708254426970908*^9}, {3.70825447964703*^9, 3.7082544796472387`*^9}, 
+   3.7082556482578087`*^9},ExpressionUUID->"135bf6d3-b138-4a14-9443-\
+4a24824d36fa"],
 
 Cell["\<\
-Another problem was presented with Plottheme -> \
-\[OpenCurlyDoubleQuote]Business\[CloseCurlyDoubleQuote] using the Cloud. It \
-is not possible to visualize any Gauges in the web page using this display \
-option.\
+We use datadrop to store the data sent by the Arduino microcontroller; and \
+the Wolfram cloud to save the Web page and visualize.\
 \>", "Item",
  CellChangeTimes->{{3.708096312466115*^9, 3.7080963343962107`*^9}, {
-  3.7081984260618267`*^9, 
-  3.708198479429161*^9}},ExpressionUUID->"3c7bded4-1166-4307-8f2c-\
-d1b7e9445ab3"],
+   3.7081984260618267`*^9, 3.7081984499984093`*^9}, {3.708254314444766*^9, 
+   3.708254426970908*^9}, {3.708254480420846*^9, 3.708254670309025*^9}, {
+   3.708254706303302*^9, 3.708254774966659*^9}, 3.7082548674616632`*^9, {
+   3.708254901388973*^9, 3.708254904641891*^9}, {3.708254945923102*^9, 
+   3.708254945923263*^9}},ExpressionUUID->"39a4a0a9-114b-45a3-9b22-\
+768c2e04c400"],
 
 Cell["\<\
-When a variable is a function of another within a Manipulate, the dynamic \
-function does not operate properly.\
+This project shows the commercial viability to use datadrop to store and \
+analyze the data of different solar heating systems.
+The purpose of this type of projects is to analyze energy production systems \
+such as photovoltaic or wind systems using low cost technologies. This will \
+allow to promote technologies that involve the Internet of things for the \
+control and monitoring of houses and buildings, promoting energy efficiency\
 \>", "Item",
  CellChangeTimes->{{3.708096312466115*^9, 3.7080963343962107`*^9}, {
-  3.7081984260618267`*^9, 
-  3.70819849089673*^9}},ExpressionUUID->"b417784f-dddd-41b8-b57c-\
-897a8715dc76"],
-
-Cell["The Quit [] function has no action within a CloudDeploy.", "Item",
- CellChangeTimes->{{3.708096312466115*^9, 3.7080963343962107`*^9}, {
-  3.7081984260618267`*^9, 
-  3.708198491714939*^9}},ExpressionUUID->"218ff78d-cf0a-4f96-9929-\
-29cfe99af70b"]
+   3.7081984260618267`*^9, 3.7081984499984093`*^9}, {3.708254314444766*^9, 
+   3.708254426970908*^9}, {3.708254480420846*^9, 3.708254670309025*^9}, {
+   3.708254706303302*^9, 3.708254774966659*^9}, 3.7082548674616632`*^9, {
+   3.708254901388973*^9, 3.708254904641891*^9}, {3.708254959677596*^9, 
+   3.708254960484503*^9}, 3.708255076238743*^9, {3.708255131344144*^9, 
+   3.708255133766878*^9}, 
+   3.70825559694376*^9},ExpressionUUID->"7ac35af0-649e-463b-b145-\
+0d875daa7c39"]
 }, Open  ]]
 }, Open  ]],
 
@@ -42248,10 +42249,57 @@ cc12212855b6"]
 }, Open  ]]
 }, Open  ]],
 
-Cell["Other", "TemplateSubsection",
- CellChangeTimes->{{3.54962463070057*^9, 
-  3.549624631259623*^9}},ExpressionUUID->"7829dc32-1c2b-44a2-9c28-\
+Cell[CellGroupData[{
+
+Cell["Problems We Found", "TemplateSubsection",
+ CellChangeTimes->{{3.54962463070057*^9, 3.549624631259623*^9}, {
+  3.708255624266067*^9, 
+  3.70825562895105*^9}},ExpressionUUID->"7829dc32-1c2b-44a2-9c28-\
 0b354f138b29"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+During the realization of the project we find some bugs in certain functions \
+of Mathematica.
+Functions such as ScheduleTask combined with DateObject and CloudDeploy did \
+not work properly. What made it impossible to refresh the website and have \
+data in real time. This same problem also affected the generator of automatic \
+reports.\
+\>", "Item",
+ CellChangeTimes->{{3.708096312466115*^9, 3.7080963343962107`*^9}, {
+   3.7081984260618267`*^9, 3.7081984499984093`*^9}, {3.708254872800433*^9, 
+   3.708254873299889*^9}, 
+   3.7082556058315983`*^9},ExpressionUUID->"0d7a94a4-a3f1-4a53-b6fd-\
+e82497c9292d"],
+
+Cell["\<\
+Another problem was presented with PlotTheme -> \
+\[OpenCurlyDoubleQuote]Business\[CloseCurlyDoubleQuote] using the Cloud. It \
+is not possible to visualize any Gauges in the web page using this display \
+option.\
+\>", "Item",
+ CellChangeTimes->{{3.708096312466115*^9, 3.7080963343962107`*^9}, {
+  3.7081984260618267`*^9, 3.708198479429161*^9}, {3.7082548778746862`*^9, 
+  3.708254878246653*^9}},ExpressionUUID->"3c7bded4-1166-4307-8f2c-\
+d1b7e9445ab3"],
+
+Cell["\<\
+When a variable is a function of another within a Manipulate, the dynamic \
+function does not operate properly.\
+\>", "Item",
+ CellChangeTimes->{{3.708096312466115*^9, 3.7080963343962107`*^9}, {
+  3.7081984260618267`*^9, 
+  3.70819849089673*^9}},ExpressionUUID->"b417784f-dddd-41b8-b57c-\
+897a8715dc76"],
+
+Cell["The Quit [] function has no action within a CloudDeploy.", "Item",
+ CellChangeTimes->{{3.708096312466115*^9, 3.7080963343962107`*^9}, {
+  3.7081984260618267`*^9, 
+  3.708198491714939*^9}},ExpressionUUID->"218ff78d-cf0a-4f96-9929-\
+29cfe99af70b"]
+}, Open  ]]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -47578,100 +47626,100 @@ adobe.com/xap/1.0/> <tiff:ResolutionUnit>2</tiff:ResolutionUnit> \
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Author"->{
-  Cell[1225, 36, 452, 6, 
-  43, "TemplateTagItem", "ExpressionUUID" -> "5e396375-e4ec-4b2a-8a24-
-   c9d541ed5b7f",
-   CellTags->"Author"]},
- "Mentor"->{
-  Cell[1680, 44, 484, 7, 
-  43, "TemplateTagItem", "ExpressionUUID" -> "6a5ec26d-6054-4674-
-   b3ce-02248f70c62f",
-   CellTags->"Mentor"]},
  "Affiliation"->{
   Cell[2167, 53, 468, 7, 
-  43, "TemplateTagItem", "ExpressionUUID" -> "569c198a-66b8-4b15-
-   a923-393ee45f812b",
+  43, "TemplateTagItem", "ExpressionUUID" -> "f040e7eb-bcb1-4d97-8beb-
+   ea56f0aff682",
    CellTags->"Affiliation"]},
+ "Author"->{
+  Cell[1225, 36, 452, 6, 
+  43, "TemplateTagItem", "ExpressionUUID" -> "0f6ba866-
+   c3d0-4311-9b18-4f6e1b8657c7",
+   CellTags->"Author"]},
  "DataSources"->{
-  Cell[2558837, 42180, 257, 4, 
-  102, "TemplateSubsection", "ExpressionUUID" -> "6f3a0019-
-   fbab-49a2-9572-1bd6ed07d5e6",
+  Cell[2559391, 42181, 257, 4, 
+  102, "TemplateSubsection", "ExpressionUUID" -> "93a34a82-7771-4989-afd2-
+   c381d13e3a95",
    CellTags->"DataSources"]},
  "FutureDirections"->{
-  Cell[2559841, 42209, 276, 4, 
-  102, "TemplateSubsection", "ExpressionUUID" -> "9ca85904-8192-4507-accd-
-   edf8c22ae5bf",
+  Cell[2560395, 42210, 276, 4, 
+  102, "TemplateSubsection", "ExpressionUUID" -> "09474773-
+   cd7b-4e44-9634-3eef64278395",
    CellTags->"FutureDirections"]},
- "References"->{
-  Cell[2560120, 42215, 313, 5, 
-  83, "TemplateSubsection", "ExpressionUUID" -> "691ce493-
-   a181-4718-94fc-2381989413d8",
-   CellTags->"References"]},
  "Keywords"->{
-  Cell[2560458, 42224, 182, 2, 
-  83, "TemplateSubsection", "ExpressionUUID" -> "
-   cd41bdd4-85e2-40fa-9e12-40ccd012985a",
+  Cell[2561012, 42225, 182, 2, 
+  83, "TemplateSubsection", "ExpressionUUID" -> "0a9d4fd1-d336-4f32-
+   b85d-12e6f9eed8ed",
    CellTags->"Keywords"]},
  "LastModifiedDate"->{
-  Cell[2561744, 42262, 229, 7, 
-  43, "LastModified", "ExpressionUUID" -> "9aa990fc-
-   ef44-4108-8a18-9e6dc5b0505c",
-   CellTags->"LastModifiedDate"]}
+  Cell[2564084, 42310, 229, 7, 
+  43, "LastModified", "ExpressionUUID" -> "42e93caf-49e7-46a8-804c-
+   cbbc765e1d38",
+   CellTags->"LastModifiedDate"]},
+ "Mentor"->{
+  Cell[1680, 44, 484, 7, 
+  43, "TemplateTagItem", "ExpressionUUID" -> "0e67a180-
+   ad7d-4310-9cf8-641a37487105",
+   CellTags->"Mentor"]},
+ "References"->{
+  Cell[2560674, 42216, 313, 5, 
+  83, "TemplateSubsection", "ExpressionUUID" -> "f66f7ca2-dcb9-4c06-9d0a-
+   f2cc48d9fd79",
+   CellTags->"References"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Author", 2874147, 47580},
- {"Mentor", 2874300, 47585},
- {"Affiliation", 2874458, 47590},
- {"DataSources", 2874621, 47595},
- {"FutureDirections", 2874799, 47600},
- {"References", 2874976, 47605},
- {"Keywords", 2875144, 47610},
- {"LastModifiedDate", 2875318, 47615}
+ {"Affiliation", 2876492, 47628},
+ {"Author", 2876650, 47633},
+ {"DataSources", 2876808, 47638},
+ {"FutureDirections", 2876986, 47643},
+ {"Keywords", 2877161, 47648},
+ {"LastModifiedDate", 2877335, 47653},
+ {"Mentor", 2877501, 47658},
+ {"References", 2877658, 47663}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 620, 10, 220, "TemplateTitle", "ExpressionUUID" -> \
-"7ca2d10d-eac3-4023-8d84-b37e7da07d27"],
+"34758043-d8d9-44dd-a789-675fe4223213"],
 Cell[CellGroupData[{
 Cell[1225, 36, 452, 6, 43, "TemplateTagItem", "ExpressionUUID" -> \
-"5e396375-e4ec-4b2a-8a24-c9d541ed5b7f",
+"0f6ba866-c3d0-4311-9b18-4f6e1b8657c7",
  CellTags->"Author"],
 Cell[1680, 44, 484, 7, 43, "TemplateTagItem", "ExpressionUUID" -> \
-"6a5ec26d-6054-4674-b3ce-02248f70c62f",
+"0e67a180-ad7d-4310-9cf8-641a37487105",
  CellTags->"Mentor"],
 Cell[2167, 53, 468, 7, 43, "TemplateTagItem", "ExpressionUUID" -> \
-"569c198a-66b8-4b15-a923-393ee45f812b",
+"f040e7eb-bcb1-4d97-8beb-ea56f0aff682",
  CellTags->"Affiliation"]
 }, Open  ]],
 Cell[2650, 63, 94, 0, 6, "TemplateSubsectionDelimiter", "ExpressionUUID" -> \
-"6d06ede4-95f4-4f6c-9a9c-4046b7674667"],
+"db3c9b28-7203-4de6-8fdc-71adf79829c2"],
 Cell[CellGroupData[{
 Cell[2769, 67, 231, 4, 103, "TemplateSection", "ExpressionUUID" -> \
-"3e3ff801-f1fd-4652-bff4-d68adc0dfdb4"],
+"ba8fb57a-50ef-4f25-afde-a880a5da3c9b"],
 Cell[3003, 73, 987134, 16190, 330, "TemplateFigure", "ExpressionUUID" -> \
-"70f4e9fd-d0d3-42a3-99ec-000dc85d98c9"]
+"a2d35d45-c7e5-421b-aa11-25f7d2b86997"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[990174, 16268, 308, 5, 103, "TemplateSection", "ExpressionUUID" -> \
-"7afdf36e-eaf3-47dd-9125-c29b24c4b857"],
+"7f28a721-268a-464e-9bc5-31f61fa28c7d"],
 Cell[990485, 16275, 966, 16, 106, "TemplateText", "ExpressionUUID" -> \
-"ffeffa0a-d804-4695-b58d-902d4e61df38"],
+"854ae70b-14eb-423f-a4a3-db7cbd22f54a"],
 Cell[991454, 16293, 1056, 17, 254, "TemplateText", "ExpressionUUID" -> \
-"aecf5747-469c-4557-82fa-340e39426d7d"],
+"31932f51-a8da-4910-b7dd-e57591b56e9a"],
 Cell[992513, 16312, 884, 14, 136, "TemplateText", "ExpressionUUID" -> \
-"a1eeab57-2745-4758-8e9c-8e210f2734d5"]
-}, Closed]]
+"fc37c58e-b01c-44f1-8892-c017509d95ad"]
+}, Open  ]]
 }, Open  ]],
 Cell[993424, 16330, 6920, 145, 95, "TemplateSectionDivider", "ExpressionUUID" \
 -> "28ae6c0f-73ee-4958-8faf-c3cb448acfc2"],
 Cell[CellGroupData[{
 Cell[1000369, 16479, 507, 16, 103, "TemplateSection", "ExpressionUUID" -> \
-"6c83595a-7129-471c-8cfa-46d0770ee375"],
+"2d847a34-66d2-4516-b974-ff32b660a5bf"],
 Cell[1000879, 16497, 1458339, 23953, 2282, "Text", "ExpressionUUID" -> \
 "eef1ffda-d14a-4870-a7c6-8b5b4807d633"]
 }, Open  ]],
@@ -47679,77 +47727,87 @@ Cell[2459233, 40453, 7856, 162, 95, "TemplateSectionDivider", \
 "ExpressionUUID" -> "a27732ae-47b5-47a4-9363-bc736bc07cda"],
 Cell[CellGroupData[{
 Cell[2467114, 40619, 186, 3, 103, "TemplateSection", "ExpressionUUID" -> \
-"f8bf5bd3-9d8e-4100-a35a-4a4952428343"],
+"ba97f0a3-c165-451d-bf4c-74c0b4a4f36e"],
 Cell[CellGroupData[{
 Cell[2467325, 40626, 270, 4, 102, "TemplateSubsection", "ExpressionUUID" -> \
-"7fe9bdcb-c9a3-4374-b462-18ca8da62a95"],
+"a4e3d008-4eb0-4d8e-bed7-33623658821c"],
 Cell[2467598, 40632, 741, 15, 313, "Text", "ExpressionUUID" -> \
-"3c8e2609-902b-464b-8e61-70329857197b"]
+"f21f687f-2e7a-4071-9f12-1ae0df825568"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2468376, 40652, 183, 3, 102, "TemplateSubsection", "ExpressionUUID" -> \
-"a7ca7de2-48fa-4976-b19a-415045f1f306"],
+"c54bc669-1d00-4e87-877b-cfd746ce37fa"],
 Cell[2468562, 40657, 491, 11, 47, "Text", "ExpressionUUID" -> \
-"d7bd6745-8452-4ff7-bc93-17cb9c097282"]
+"82c3d98e-5126-48e1-bc4f-4590111873b6"]
 }, Open  ]],
 Cell[2469068, 40671, 186, 3, 102, "TemplateSubsection", "ExpressionUUID" -> \
-"7ed50698-7d29-4c82-8ea9-9f919b96bbd8"],
+"a55786c3-e7a6-4cf3-bb54-b05532239df1"],
 Cell[CellGroupData[{
 Cell[2469279, 40678, 249, 4, 83, "TemplateSubsection", "ExpressionUUID" -> \
-"63290694-14ef-4ba1-b08d-52cb67182666"],
+"5a247b12-4033-40a4-960f-65d46bf0f9c2"],
 Cell[CellGroupData[{
-Cell[2469553, 40686, 543, 11, 123, "Item", "ExpressionUUID" -> \
-"66913294-00e0-48fd-b0de-93719c05ff90"],
-Cell[2470099, 40699, 415, 9, 70, "Item", "ExpressionUUID" -> \
-"74758895-f76a-4ad8-9f8c-96066949634f"],
-Cell[2470517, 40710, 313, 7, 70, "Item", "ExpressionUUID" -> \
-"94e3bc2d-aeae-4c73-b9e8-8d342dc1c6f8"],
-Cell[2470833, 40719, 251, 4, 45, "Item", "ExpressionUUID" -> \
-"1372a9f1-9207-4768-a9f2-d961a29eeee4"]
+Cell[2469553, 40686, 470, 8, 70, "Item", "ExpressionUUID" -> \
+"135bf6d3-b138-4a14-9443-4a24824d36fa"],
+Cell[2470026, 40696, 603, 10, 70, "Item", "ExpressionUUID" -> \
+"39a4a0a9-114b-45a3-9b22-768c2e04c400"],
+Cell[2470632, 40708, 1006, 16, 176, "Item", "ExpressionUUID" -> \
+"7ac35af0-649e-463b-b145-0d875daa7c39"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2471133, 40729, 275, 4, 102, "TemplateSubsection", "ExpressionUUID" -> \
-"5d0ee2cf-fcf0-4f2a-bf60-949cc25986e8"],
-Cell[2471411, 40735, 87389, 1440, 254, "Input", "ExpressionUUID" -> \
+Cell[2471687, 40730, 275, 4, 102, "TemplateSubsection", "ExpressionUUID" -> \
+"f27ae70e-91c7-4506-8835-21b281190700"],
+Cell[2471965, 40736, 87389, 1440, 254, "Input", "ExpressionUUID" -> \
 "b0412244-41a6-4e8f-a537-7c2ae6aae2dd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2558837, 42180, 257, 4, 102, "TemplateSubsection", "ExpressionUUID" -> \
-"6f3a0019-fbab-49a2-9572-1bd6ed07d5e6",
+Cell[2559391, 42181, 257, 4, 102, "TemplateSubsection", "ExpressionUUID" -> \
+"93a34a82-7771-4989-afd2-c381d13e3a95",
  CellTags->"DataSources"],
-Cell[2559097, 42186, 729, 20, 51, "Input", "ExpressionUUID" -> \
-"e19d90f5-d46e-4275-b37f-14252c7294ee"]
+Cell[2559651, 42187, 729, 20, 51, "Input", "ExpressionUUID" -> \
+"2fd5f643-4321-4eab-97d6-34ec84f64e21"]
 }, Open  ]],
-Cell[2559841, 42209, 276, 4, 102, "TemplateSubsection", "ExpressionUUID" -> \
-"9ca85904-8192-4507-accd-edf8c22ae5bf",
+Cell[2560395, 42210, 276, 4, 102, "TemplateSubsection", "ExpressionUUID" -> \
+"09474773-cd7b-4e44-9634-3eef64278395",
  CellTags->"FutureDirections"],
-Cell[2560120, 42215, 313, 5, 83, "TemplateSubsection", "ExpressionUUID" -> \
-"691ce493-a181-4718-94fc-2381989413d8",
+Cell[2560674, 42216, 313, 5, 83, "TemplateSubsection", "ExpressionUUID" -> \
+"f66f7ca2-dcb9-4c06-9d0a-f2cc48d9fd79",
  CellTags->"References"],
 Cell[CellGroupData[{
-Cell[2560458, 42224, 182, 2, 83, "TemplateSubsection", "ExpressionUUID" -> \
-"cd41bdd4-85e2-40fa-9e12-40ccd012985a",
+Cell[2561012, 42225, 182, 2, 83, "TemplateSubsection", "ExpressionUUID" -> \
+"0a9d4fd1-d336-4f32-b85d-12e6f9eed8ed",
  CellTags->"Keywords"],
-Cell[2560643, 42228, 230, 4, 47, "TemplateComment", "ExpressionUUID" -> \
-"8eaed280-8351-436b-a421-fb8f58717574"],
+Cell[2561197, 42229, 230, 4, 47, "TemplateComment", "ExpressionUUID" -> \
+"98efa464-d671-4dc2-97d9-29e7a0668393"],
 Cell[CellGroupData[{
-Cell[2560898, 42236, 257, 4, 45, "Item", "ExpressionUUID" -> \
-"55ea3b02-9126-44d1-95a7-3ec1a12ecaf4"],
-Cell[2561158, 42242, 209, 4, 45, "Item", "ExpressionUUID" -> \
-"af56fb05-d48d-49b2-bf47-60d057f6d0fd"]
+Cell[2561452, 42237, 257, 4, 45, "Item", "ExpressionUUID" -> \
+"f7ed5b26-a174-4b75-b99a-8bfcc34e76f6"],
+Cell[2561712, 42243, 209, 4, 45, "Item", "ExpressionUUID" -> \
+"9fa34bc6-1ad4-4a1c-a286-cc12212855b6"]
 }, Open  ]]
 }, Open  ]],
-Cell[2561394, 42250, 160, 3, 102, "TemplateSubsection", "ExpressionUUID" -> \
-"8505c6c0-76a5-42e9-936f-e71e2ad0174c"],
 Cell[CellGroupData[{
-Cell[2561579, 42257, 162, 3, 83, "TemplateSubsection", "ExpressionUUID" -> \
-"214c47fa-e501-4108-b070-b8ed0ff8a463"],
-Cell[2561744, 42262, 229, 7, 43, "LastModified", "ExpressionUUID" -> \
-"9aa990fc-ef44-4108-8a18-9e6dc5b0505c",
+Cell[2561970, 42253, 220, 4, 102, "TemplateSubsection", "ExpressionUUID" -> \
+"7829dc32-1c2b-44a2-9c28-0b354f138b29"],
+Cell[CellGroupData[{
+Cell[2562215, 42261, 619, 12, 123, "Item", "ExpressionUUID" -> \
+"0d7a94a4-a3f1-4a53-b6fd-e82497c9292d"],
+Cell[2562837, 42275, 463, 9, 70, "Item", "ExpressionUUID" -> \
+"3c7bded4-1166-4307-8f2c-d1b7e9445ab3"],
+Cell[2563303, 42286, 313, 7, 70, "Item", "ExpressionUUID" -> \
+"b417784f-dddd-41b8-b57c-897a8715dc76"],
+Cell[2563619, 42295, 251, 4, 45, "Item", "ExpressionUUID" -> \
+"218ff78d-cf0a-4f96-9929-29cfe99af70b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2563919, 42305, 162, 3, 102, "TemplateSubsection", "ExpressionUUID" -> \
+"1cd568fb-8340-49f7-8b1e-208734b6bb99"],
+Cell[2564084, 42310, 229, 7, 43, "LastModified", "ExpressionUUID" -> \
+"42e93caf-49e7-46a8-804c-cbbc765e1d38",
  CellTags->"LastModifiedDate"],
-Cell[2561976, 42271, 917, 24, 62, "Input", "ExpressionUUID" -> \
-"af5c67de-dfc5-4a3c-9609-e9ed7d5cb570"]
+Cell[2564316, 42319, 917, 24, 62, "Input", "ExpressionUUID" -> \
+"387919cf-8311-4ba3-bacd-ed733929beeb"]
 }, Open  ]]
 }, Open  ]]
 }
